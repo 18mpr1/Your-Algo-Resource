@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // Algorithms
 import BubbleSort from './algorithms/bubbleSort';
 
+
 // Icons
 /*
 import Play from '@material-ui/icons/PlayCircleOutlineRounded';
@@ -15,6 +16,7 @@ import RotateLeft from '@material-ui/icons/RotateLeft';
 import Bar from './components/bar';
 //CSS
 import './App.css';
+import InfoBar from "./components/infoBar";
 
 class App extends Component {
     state = {
@@ -199,9 +201,10 @@ class App extends Component {
                         </button>
                     </div>
                 </div>
-                <div className='pannel'>
+                {/*<div className='pannel'>
 
-                </div>
+                </div>*/}
+                <InfoBar/>
             </div>
         );
     }

@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   height: 250px;
+  background-color: black;
 }
 
 .card {
@@ -55,8 +56,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .pannel {
+background-color: black;
+  color: white;
+}
 
+#infobar{
+  color: white;
 }
