@@ -2,11 +2,16 @@
   text-align: center;
 }
 
+.app{
+  background-color: black;
+}
+
 .frame {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .container {
@@ -14,13 +19,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 220px;
+  height: 250px;
 }
 
 .card {
   border-radius: 2em;
   padding: 0 1em;
-  background-color: #818181;
+  background-color: midnightblue;
 }
 
 .controller {
@@ -30,7 +35,7 @@
   height: 3em;
   width: 3em;
   border-radius: 100%;
-  background: transparent;
+  background: mediumseagreen;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -40,7 +45,7 @@
 .control-buttons {
   height: 4em;
   width: 15em;
-  background-color: #eee;
+  background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,4 +58,5 @@
 }
 
 .pannel {
+
 }

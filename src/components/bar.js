@@ -9,7 +9,7 @@ function Bar({ index, length, color, changeArray }) {
     }, [length]);
 
     const colors = [
-        ['rgba(61, 90, 241, 0.5)', 'rgba(61, 90, 241, 0.2)'],
+        ['#C14AB3','rgba(254, 254, 254, 0.25)'], // doing a darker shade of purple will make it more foggy, which may be desired
         ['rgba(255, 48, 79, 1)', 'rgba(255, 48, 79, 0.5)'],
         ['rgba(131, 232, 90, 0.5)', 'rgba(131, 232, 90, 0.2)'],
     ];

@@ -4,6 +4,7 @@
     margin: 0 1em;
     transform-style: preserve-3d;
     transform: rotateX(-20deg) rotateY(-30deg);
+
 }
 
 .side {
@@ -51,15 +52,27 @@
 .input {
     text-align: center;
     transform: rotate(-90deg);
-
+    color: white;
+    font-weight: bold;
     outline: none;
+}
+
+.quantity-nav{
+    position: relative;
+    top: 12px;
 }
 
 .quantity-button {
     text-align: center;
-    background: rgba(10, 255, 1, 0.2);
-    margin: 1px;
+    position: relative;
+    top:    -16px;
+    background: rebeccapurple;
+    margin: 2px;
     cursor: pointer;
+    color: white;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
     user-select: none;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -68,7 +81,7 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
-.quantity-button::hover {
+.quantity-button:hover {
     opacity: 0.5;
 }
 
