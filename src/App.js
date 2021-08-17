@@ -6,12 +6,11 @@ import BubbleSort from './algorithms/bubbleSort';
 
 
 // Icons
-/*
 import Play from '@material-ui/icons/PlayCircleOutlineRounded';
 import Forward from '@material-ui/icons/SkipNextRounded';
 import Backward from '@material-ui/icons/SkipPreviousRounded';
 import RotateLeft from '@material-ui/icons/RotateLeft';
-*/
+
 
 import Bar from './components/bar';
 //CSS
@@ -180,7 +179,7 @@ class App extends Component {
         } else {
             playButton = (
                 <button className='controller' onClick={this.start}>
-                    {/*<Play />*/}
+                    <Play />
                 </button>
             );
         }
@@ -193,17 +192,18 @@ class App extends Component {
                 <div className='control-pannel'>
                     <div className='control-buttons'>
                         <button className='controller' onClick={this.previousStep}>
-                            {/*<Backward />*/}
+                            <Backward />
                         </button>
                         {playButton}
+
                         <button className='controller' onClick={this.nextStep}>
-                            {/*<Forward />*/}
+                            <Forward />
                         </button>
                     </div>
                 </div>
-                {/*<div className='pannel'>
+                <div className='pannel'>
 
-                </div>*/}
+                </div>
                 <InfoBar/>
             </div>
         );
