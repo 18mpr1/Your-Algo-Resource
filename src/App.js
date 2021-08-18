@@ -173,7 +173,7 @@ class App extends Component {
         if (this.state.arraySteps.length === this.state.currentStep) {
             playButton = (
                 <button className='controller' onClick={this.generateRandomArray}>
-                    {/*<RotateLeft />*/}
+                    <RotateLeft />
                 </button>
             );
         } else {
