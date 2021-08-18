@@ -27,7 +27,7 @@ class App extends Component {
         currentStep: 0,
         count: 20,
         delay: 500,
-        algorithm: 'Quick Sort',// this is where the algorithm goes
+        algorithm: "Quick Sort", // this is where the algorithm goes
         timeouts: [],
     };
 
@@ -197,7 +197,6 @@ class App extends Component {
                             <Backward />
                         </button>
                         {playButton}
-
                         <button className='controller' onClick={this.nextStep}>
                             <Forward />
                         </button>
@@ -213,8 +212,6 @@ class App extends Component {
     }
 }
 
-document.getElementById('bubble-sort').onclick = function() {
-    return("Bubble Sort");
-};
+
 
 export default App;

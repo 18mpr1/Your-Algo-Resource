@@ -5,29 +5,31 @@
 // from the Bubble Sort template
 import {swap} from "./helpers";
 
-// This is not yet quicksort!!!!!!!!!
-const QuickSort = (array, position, arraySteps, colorSteps) => {
-    console.log("Quick Sort");
-    let colorKey = colorSteps[colorSteps.length - 1].slice();
-
-    for (let i = 0; i < array.length - 1; i++) {
-        for (let j = 0; j < array.length - i - 1; j++) {
-            if (array[j] > array[j + 1]) {
-                array = swap(array, j, j + 1);
-            }
-            arraySteps.push(array.slice());
-            colorKey[j] = 1;
-            colorKey[j + 1] = 1;
-            colorSteps.push(colorKey.slice());
-            colorKey[j] = 0;
-            colorKey[j + 1] = 0;
+// Helper function for QuickSort(...);
+function partition(items, left, right) {
+    let pivot   = items[Math.floor((right + left) / 2)], //middle element
+        i       = left, //left pointer
+        j       = right; //right pointer
+    while (i <= j) {
+        while (items[i] < pivot) {
+            i++;
         }
-        colorKey[arraySteps.length - 1 - i] = 2;
-        arraySteps.push(array.slice());
-        colorSteps.push(colorKey.slice());
+        while (items[j] > pivot) {
+            j--;
+        }
+        if (i <= j) {
+            swap(items, i, j); //swap two elements
+            i++;
+            j--;
+        }
     }
-    colorSteps[colorSteps.length - 1] = new Array(array.length).fill(2);
-    return;
-};
+    return i;
+}
+
+
+function QuickSort(items, left, right) {
+    console.log("Quick Sort");
+    // Model this function on BubbleSort(...);
+}
 
 export default QuickSort;
