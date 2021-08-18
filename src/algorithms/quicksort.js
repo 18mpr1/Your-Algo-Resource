@@ -1,7 +1,13 @@
-import {swap} from './helpers';
+// Quick Sort
+// Matthew Rieckenberg
+// August 2021
 
-const BubbleSort = (array, position, arraySteps, colorSteps) => {
-    console.log("Bubble Sort");
+// from the Bubble Sort template
+import {swap} from "./helpers";
+
+// This is not yet quicksort!!!!!!!!!
+const QuickSort = (array, position, arraySteps, colorSteps) => {
+    console.log("Quick Sort");
     let colorKey = colorSteps[colorSteps.length - 1].slice();
 
     for (let i = 0; i < array.length - 1; i++) {
@@ -24,4 +30,4 @@ const BubbleSort = (array, position, arraySteps, colorSteps) => {
     return;
 };
 
-export default BubbleSort;
+export default QuickSort;

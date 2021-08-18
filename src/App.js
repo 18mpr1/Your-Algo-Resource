@@ -16,6 +16,7 @@ import Bar from './components/bar';
 //CSS
 import './App.css';
 import InfoBar from "./components/infoBar";
+import QuickSort from "./algorithms/quicksort";
 
 class App extends Component {
     state = {
@@ -26,12 +27,13 @@ class App extends Component {
         currentStep: 0,
         count: 20,
         delay: 500,
-        algorithm: 'Bubble Sort',
+        algorithm: 'Quick Sort',// this is where the algorithm goes
         timeouts: [],
     };
 
     ALGORITHMS = {
         'Bubble Sort': BubbleSort,
+        'Quick Sort' : QuickSort,
     };
 
     componentDidMount() {
@@ -202,12 +204,17 @@ class App extends Component {
                     </div>
                 </div>
                 <div className='pannel'>
-
+                    <button id="bubble-sort">Bubble Sort</button>
+                    <button>Quick Sort</button>
                 </div>
                 <InfoBar/>
             </div>
         );
     }
 }
+
+document.getElementById('bubble-sort').onclick = function() {
+    return("Bubble Sort");
+};
 
 export default App;
