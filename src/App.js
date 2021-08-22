@@ -1,7 +1,7 @@
 // Matthew Rieckenberg
 
 // https://www.youtube.com/watch?v=Ci-6NYmaimw
-// left off at 20:39
+// left off at 47:53
 // very good tutorial
 
 import './App.css'
@@ -32,7 +32,7 @@ class App extends Component{
     generateRandomArray(){
         console.log("Generating a new array");
         const count = this.state.count;
-        const tempArray = new Array();
+        const tempArray = [];
 
         for(let i = 0; i<count;i++){
             tempArray.push(this.generateRandomInteger(50,200));
@@ -51,12 +51,12 @@ class App extends Component{
                 key={index}
                 index={index}
                 length={value}
-                colour={this.state.colourKey[index]}
+                colour={0}
             />
-        })
+        });
         return(
             <div className="app">
-                <h1>{bars}</h1>
+                {bars}
             </div>
 
         )
